@@ -1,15 +1,7 @@
 package com.example.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity
 @Table(name = "employees")
 public class Employee {
@@ -27,90 +19,55 @@ public class Employee {
     @Column(name = "email_id")
     private String emailId;
 
-
-
-    /*//contructor--------
+    
+    //costruttore
     public Employee(long id, String firstName, String lastName, String emailId) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.emailId = emailId;
+    	super();
+    	this.id = id;
+    	this.firstName = firstName;
+    	this.lastName = lastName;
+    	this.emailId = emailId;
     }
-
+   
     public Employee() {
-    }
-    //-----------------------
+		super();
+	}
 
-    *//**
-     //GETTER & SETTER
-     *
-     * @return id
-     *//*
-    public long getId() {
-        return this.id;
-    }
+	//getter & setter
+	public long getId() {
+		return id;
+	}
 
-    *//**
-     * set field
-     *
-     * @param id
-     *//*
-    public void setId(long id) {
-        this.id = id;
-    }
 
-    *//**
-     * get field
-     *
-     * @return firstName
-     *//*
-    public String getFirstName() {
-        return this.firstName;
-    }
+	public void setId(long id) {
+		this.id = id;
+	}
 
-    *//**
-     * set field
-     *
-     * @param firstName
-     *//*
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+	public String getFirstName() {
+		return firstName;
+	}
 
-    *//**
-     * get field
-     *
-     * @return lastName
-     *//*
-    public String getLastName() {
-        return this.lastName;
-    }
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
 
-    *//**
-     * set field
-     *
-     * @param lastName
-     *//*
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+	public String getLastName() {
+		return lastName;
+	}
 
-    *//**
-     * get field
-     *
-     * @return emailId
-     *//*
-    public String getEmailId() {
-        return this.emailId;
-    }
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
 
-    *//**
-     * set field
-     *
-     * @param emailId
-     *//*
-    public void setEmailId(String emailId) {
-        this.emailId = emailId;
-    }*/
-    //-----------------------------------------
+	public String getEmailId() {
+		return emailId;
+	}
+
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
+
+
+
+  
 }
