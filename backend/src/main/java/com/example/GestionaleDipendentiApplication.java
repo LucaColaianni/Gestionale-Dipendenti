@@ -23,13 +23,13 @@ public class GestionaleDipendentiApplication implements CommandLineRunner  {
 		employee.setFirstName("Luca");
 		employee.setLastName("Colaianni");
 		employee.setEmailId("lucacolaianni26@gmail.com");
-		//employeeRepository.save(employee);
+		employeeRepository.save(employee);
 		
 		Employee employee1 = new Employee();
 		employee1.setFirstName("Marco");
 		employee1.setLastName("Perini");
 		employee1.setEmailId("marcoperini@gmail.com");
-		//employeeRepository.save(employee1 );
+		employeeRepository.save(employee1 );
 		
 		
 	}
