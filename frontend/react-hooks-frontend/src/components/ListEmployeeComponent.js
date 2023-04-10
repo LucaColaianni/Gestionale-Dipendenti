@@ -36,11 +36,13 @@ const ListEmployeeComponent = () => {
             <Link to = "/add-employee" className = "btn btn-primary mb-2" > Add Employee </Link>
             <table className="table table-bordered table-striped">
                 <thead>
+                    <tr>
                     <th> Id </th>
                     <th> First Name </th>
                     <th> Last Name </th>
                     <th> Email Id </th>
                     <th> Actions </th>
+                    </tr>
                 </thead>
                 <tbody>
                     {
