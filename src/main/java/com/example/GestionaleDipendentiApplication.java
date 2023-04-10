@@ -1,12 +1,10 @@
 package com.example;
 
+import com.example.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import com.example.model.Employee;
-import com.example.repository.EmployeeRepository;
 
 @SpringBootApplication
 public class GestionaleDipendentiApplication implements CommandLineRunner  {
@@ -19,7 +17,7 @@ public class GestionaleDipendentiApplication implements CommandLineRunner  {
 	
 	@Override
 	public void run(String... args) throws Exception {
-		Employee employee = new Employee();
+		/*Employee employee = new Employee();
 		employee.setFirstName("Luca");
 		employee.setLastName("Colaianni");
 		employee.setEmailId("lucacolaianni26@gmail.com");
@@ -29,7 +27,7 @@ public class GestionaleDipendentiApplication implements CommandLineRunner  {
 		employee1.setFirstName("Marco");
 		employee1.setLastName("Perini");
 		employee1.setEmailId("marcoperini@gmail.com");
-		employeeRepository.save(employee1 );
+		employeeRepository.save(employee1 );*/
 		
 		
 	}
