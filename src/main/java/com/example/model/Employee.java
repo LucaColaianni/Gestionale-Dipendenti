@@ -1,7 +1,15 @@
 package com.example.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "employees")
 public class Employee {
@@ -20,7 +28,7 @@ public class Employee {
     private String emailId;
 
     
-    //costruttore
+    /*//costruttore
     public Employee(long id, String firstName, String lastName, String emailId) {
     	super();
     	this.id = id;
@@ -66,7 +74,7 @@ public class Employee {
 	public void setEmailId(String emailId) {
 		this.emailId = emailId;
 	}
-
+*/
 
 
   

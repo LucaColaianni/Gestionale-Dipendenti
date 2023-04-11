@@ -19,7 +19,7 @@ public class EmployeeController {
 	private EmployeeRepository employeeRepository;
 
 	@GetMapping
-	public List<Employee> gettAllEmployees(){
+	public List<Employee> getAllEmployees(){
 		return employeeRepository.findAll();
 	}
 	// build create employee REST API
