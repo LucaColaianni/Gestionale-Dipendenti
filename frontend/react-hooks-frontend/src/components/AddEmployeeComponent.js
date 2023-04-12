@@ -9,6 +9,7 @@ const AddEmployeeComponent = () => {
     const [emailId, setEmailId] = useState('')
     const history = useHistory();
     const {id} = useParams();
+    console.log("ciao");
 
     const saveOrUpdateEmployee = (e) => {
         e.preventDefault();
